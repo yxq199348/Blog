@@ -1,6 +1,6 @@
 ## 前端博客
 ### 目录
-* Node
+* JavaScript
   * [Node Runoob](https://www.jianshu.com/p/c42edc8310ff)
   * [ECMAScript6 JSPang](https://www.jianshu.com/p/91012adfd06d)
 ### 博客连接
