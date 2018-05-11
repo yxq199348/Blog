@@ -56,7 +56,7 @@ transform-origin：x-axis y-axis z-axis
 ````
 
 **解析**
-* 位移translate(n deg)：元素从当前位置移动，根据给定的left(x坐标)和top(y坐标)位置参数
+* 位移translate(x, y)：元素从当前位置移动，根据给定的left(x坐标)和top(y坐标)位置参数
 
 * 旋转rotate()：元素顺时针旋转给定的角度。负值：元素将逆时针旋转。
 
@@ -64,12 +64,24 @@ transform-origin：x-axis y-axis z-axis
 
 * 扭曲skew()：元素翻转给定的角度，根据给定的水平线(X轴)和垂直线(Y轴)参数。
 
-* matrix()：使用六个值的矩阵
+* matrix(缩放X轴, , , 缩放Y轴,水平偏移距离, 垂直偏移距离)：使用六个值的矩阵
 
 **备注**
 * 旋转rotate()函数与扭曲skew()函数的区别
 
 rotate()函数只是旋转，而不会改变元素的形状。skew()函数不会旋转，而只会改变元素的形状。
+
+* 旋转(rotate)
+
+matrix(cos@, sin@, -sin@, cos@, 0, 0)
+
+@表示旋转的角度
+
+* 拉伸(skew)
+
+matrix(1, tan(@y), tan(@x), 1, 0, 0)
+
+@y表示y轴，@x表示x轴
 
 **Ex**
 ````
