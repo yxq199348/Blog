@@ -71,6 +71,10 @@ transform-origin：x-axis y-axis z-axis
 
 rotate()函数只是旋转，而不会改变元素的形状。skew()函数不会旋转，而只会改变元素的形状。
 
+* 缩放(scale)
+
+matrix(sx, 0, 0, sy, 0, 0)->scale(sx, sy)
+
 * 旋转(rotate)
 
 matrix(cos@, sin@, -sin@, cos@, 0, 0)
@@ -97,6 +101,10 @@ div {
     </div>
 </div>
 ````
+
+**参考链接**
+
+http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/comment-page-2/
 
 
 
