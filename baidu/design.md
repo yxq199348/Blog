@@ -102,7 +102,40 @@ div {
 </div>
 ````
 
-**参考链接**
+### 动画
+
+**语法**
+
+````
+animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
+````
+
+**解析**
+
+* animation-name：规定需要绑定到选择器的keyframe名称
+
+* animation-duration：规定完成动画所花费的时间，以秒或毫秒计
+
+* animation-timing-function：规定动画的速度曲线
+
+* animation-delay：规定在动画之前的延迟
+
+* animation-iteration-count：规定动画应该播放的次数
+
+* animation-direction：规定是否应该轮流反向播放动画
+
+**Ex**
+````
+@keyframe mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+div {
+    animation: mymove 5s infinite;
+}
+````
+
+### 参考链接
 
 http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/comment-page-2/
 
