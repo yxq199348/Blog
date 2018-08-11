@@ -187,7 +187,7 @@ preserve-3d: 子元素将保留其3D位置
 #### 语法
 
 ````
-animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
+animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode animation-play-state;
 ````
 
 #### 解析
@@ -203,6 +203,12 @@ animation: animation-name animation-duration animation-timing-function animation
 * animation-iteration-count：规定动画应该播放的次数
 
 * animation-direction：规定是否应该轮流反向播放动画
+
+* animation-fill-mode: 检索或设置对象动画时间之外的状态
+
+animation-fill-mode: none | forwards | backwards | both;
+
+* animation-play-state: 检索或设置对象动画的状态
 
 #### Ex
 
