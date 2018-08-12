@@ -222,6 +222,34 @@ div {
 }
 ````
 
+### box-reflect
+
+设置或检索对象倒影。
+
+#### 语法
+
+````
+box-reflect: none | <direction> <offset>? <mask-box-image>?
+````
+
+#### 解析
+
+* direction
+
+above: 指定倒影在对象的上边
+
+below: 指定倒影在对象的下边
+
+left: 指定倒影在对象的左边
+
+right: 指定倒影在对象的右边
+
+* offset: <length> | <percentage>
+
+图片与倒影间隔
+
+mask-box-image: none | <url> | <linear-gradient> | <radius-gradient> | <repeating-linear-graditent> | <repeating-radial-gradient>
+
 ### 参考链接
 
 http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/comment-page-2/
